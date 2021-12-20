@@ -1,14 +1,41 @@
+/* パララックスのラッパー */
 .wrap {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid #000;
-  background-color: #ececec;
-  height: 100vh;
+  height: 120vh;
 }
+/*パララックスデフォルト設定 */
 .parallax {
   position: absolute;
   font-size: 3rem;
   top: 25%;
+}
+
+/* 各ラッパー個別設定 */
+.wrap-1 {
+  background: url('../img/sunflowers-g86826ffa7_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrap-2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  height: 50vh;
+  width: 70vw;
+  margin: auto;
+}
+.wrap-2 .parallax {
+  top: 0;
+  left: 0;
+  width: 300px;
+  font-size: 1rem;
+}
+.wrap-3 {
+  background: url('../img/tree-gbe5798a9c_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
 }
